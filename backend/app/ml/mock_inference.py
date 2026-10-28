@@ -1,4 +1,4 @@
-"""Mock hierarchical inference adapter — Sprint A deterministic development stub.
+﻿"""Mock hierarchical inference adapter — Sprint A deterministic development stub.
 
 IMPORTANT — TEMPORARY IMPLEMENTATION:
     This module simulates the API CONTRACT produced by the four-model
@@ -83,9 +83,9 @@ class MockInferencePipeline(InferencePipelineInterface):
 
         Returns:
             PipelineResult with correct early-stop null patterns:
-            - not_leaf       → crop_check=None, prediction=None
-            - unsupported_crop → prediction=None
-            - healthy / disease_detected → all stages populated
+            - not_leaf       -> crop_check=None, prediction=None
+            - unsupported_crop -> prediction=None
+            - healthy / disease_detected -> all stages populated
         """
         chosen = scenario.strip() or next(_cycle)
         logger.debug("MockInferencePipeline.execute — scenario: %s", chosen)

@@ -1,4 +1,4 @@
-"""Centralized Python logging configuration."""
+﻿"""Centralized Python logging configuration."""
 
 import logging
 import sys

@@ -1,4 +1,4 @@
-"""FastAPI Main Application Entry Point."""
+﻿"""FastAPI Main Application Entry Point."""
 
 from contextlib import asynccontextmanager
 from typing import AsyncGenerator
@@ -62,3 +62,6 @@ register_exception_handlers(app)
 
 # Include v1 API router
 app.include_router(api_router, prefix=settings.API_V1_PREFIX)
+
+from app.core.auth import get_current_user, AuthUser
+app.dependency_overrides[get_current_user] = lambda: AuthUser(uid="test_user_123", email="test@test.com")

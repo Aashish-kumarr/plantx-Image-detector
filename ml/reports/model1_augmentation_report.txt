@@ -1,0 +1,111 @@
+Model 1 Augmentation Report
+===========================
+Augmentations configured:
+  - RandomHorizontalFlip (p=0.5)
+  - RandomAffine:
+      Degrees: ±15
+      Translate: ±5% (0.05)
+      Scale: 95% - 105% (0.95-1.05)
+  - ColorJitter:
+      Brightness: ±10% (0.1)
+      Contrast: ±10% (0.1)
+Number of samples inspected: 15
+Visual samples saved to: C:\Users\ak021\Desktop\workspace\plantDx\plant image detector\reports\model1_augmentation_samples
+
+Tensor Validation Results:
+
+File: d77c3775-6dbf-4ad7-a04d-9acc067a7914___YLCV_GCREC 2205.JPG
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: 0a14783a-838a-4d4f-a671-ff98011714c6___FREC_Scab 3288.JPG
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: d9983cb7-98ea-4dff-b283-faa1d93faa36___RS_HL 7749.JPG
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: cb647989-23e4-4d54-ba50-7685b19e780d___RS_GLSp 9280.JPG
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: fd192f6d-f764-43aa-8ab9-9c1578d55200___JR_Sept.L.S 8466.JPG
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: 227_0122.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: 042_0085.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: 251_0665.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: 130_0047.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: 145_0197.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: Places365_val_00016091.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: Places365_val_00034741.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: Places365_val_00026532.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: Places365_val_00002618.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+File: Places365_val_00027646.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  Valid Tensor (No NaN/Inf): True
+  Eval Deterministic: True
+  Train Varies: True
+
+Summary:
+Tensor extraction failures: 0
+Determinism failures (Eval): 0
+Variation failures (Train): 0

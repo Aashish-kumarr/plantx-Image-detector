@@ -1,0 +1,53 @@
+Model 1 DataLoader Validation Report
+=====================================
+Dataset Configurations:
+  Batch Size: 64
+  Num Workers: 4
+
+Dataset Split Summary:
+  Split: train
+    Total Images: 88869 (Expected: 88869)
+    Label 0 (Non-Leaf): 45425
+    Label 1 (Leaf): 43444
+  Split: val
+    Total Images: 11108 (Expected: 11108)
+    Label 0 (Non-Leaf): 5678
+    Label 1 (Leaf): 5430
+  Split: test
+    Total Images: 11110 (Expected: 11110)
+    Label 0 (Non-Leaf): 5679
+    Label 1 (Leaf): 5431
+
+Batch Verification:
+  train DataLoader:
+    Image Batch Shape: [64, 3, 224, 224]
+    Label Batch Shape: [64]
+    Image dtype: torch.float32
+    NaNs Present: False
+    Infs Present: False
+    Labels are valid (0/1): True
+    Status: PASS
+  val DataLoader:
+    Image Batch Shape: [64, 3, 224, 224]
+    Label Batch Shape: [64]
+    Image dtype: torch.float32
+    NaNs Present: False
+    Infs Present: False
+    Labels are valid (0/1): True
+    Status: PASS
+  test DataLoader:
+    Image Batch Shape: [64, 3, 224, 224]
+    Label Batch Shape: [64]
+    Image dtype: torch.float32
+    NaNs Present: False
+    Infs Present: False
+    Labels are valid (0/1): True
+    Status: PASS
+
+Performance Sanity Check (Training Loader):
+  Total time for 10 batches: 12.88s
+  Average time per batch: 1.29s
+  Approximate images per second: 49.7 imgs/s
+  Note: This includes disk I/O, OpenCV morphology, OpenCV masking, PIL scaling, and CPU augmentations.
+
+Total Errors Encountered: 0

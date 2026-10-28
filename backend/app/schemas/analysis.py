@@ -33,16 +33,22 @@ class StageCheck(BaseModel):
     )
 
 
+class ModelRoute(BaseModel):
+    leaf_model: int
+    crop_model: int
+    disease_model: Optional[int] = None
+
 class Prediction(BaseModel):
-    """Disease prediction result from Model 3 or Model 4."""
+    """Disease prediction result from Models 3-11 or single-condition registry."""
 
     crop: str = Field(..., description="Crop class identified by Model 2")
-    class_id: str = Field(
-        ..., description="Disease class identifier: healthy | early_blight | late_blight"
-    )
-    display_name: str = Field(..., description="Human-readable class name")
-    score: float = Field(..., ge=0.0, le=1.0, description="Activation score [0,1]")
+    disease_supported: bool = Field(True, description="Whether disease classification is supported for this crop")
+    class_id: Optional[str] = Field(None, description="Disease class identifier")
+    display_name: Optional[str] = Field(None, description="Human-readable class name")
+    score: Optional[float] = Field(None, ge=0.0, le=1.0, description="Activation score [0,1]")
     model_version: Optional[str] = Field(None)
+    model_route: Optional[ModelRoute] = Field(None, description="Model routing path")
+    disease_source: Optional[str] = Field(None, description="Source of disease information: disease_model | single_dataset_class")
 
 
 class QualitySubDoc(BaseModel):

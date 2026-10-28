@@ -1,4 +1,4 @@
-"""Abstract interfaces and contracts for ML pipeline, models, and DSP preprocessing.
+﻿"""Abstract interfaces and contracts for ML pipeline, models, and DSP preprocessing.
 
 Defines structural dependency boundaries without PyTorch or model implementations.
 """

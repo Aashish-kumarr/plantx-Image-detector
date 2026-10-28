@@ -1,0 +1,225 @@
+[
+    {
+        "model_number": 5,
+        "model_name": "model5_apple",
+        "crop": "apple",
+        "checkpoint_path": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model5_apple_final_refine\\best_final_refined_model.pth",
+        "checkpoint_stage": "FINAL_REFINE",
+        "validation_accuracy": 92.40506329113924,
+        "validation_macro_f1": 0.9134860389136128,
+        "num_classes": 4,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "apple_scab",
+            "2": "black_rot",
+            "3": "cedar_apple_rust"
+        },
+        "normalization_mean": [
+            0.07347409,
+            0.10038915,
+            0.0658901
+        ],
+        "normalization_std": [
+            0.1349588,
+            0.17648672,
+            0.12671633
+        ],
+        "architecture": "resnet9",
+        "image_size": 224,
+        "test_status": "CONSUMED_FINAL",
+        "test_evaluated": true,
+        "test_evaluation_timestamp": 1790613639.4916096,
+        "test_accuracy": 91.53605015673982,
+        "test_macro_f1": 0.9052749473963253
+    },
+    {
+        "model_number": 6,
+        "model_name": "model6_cherry",
+        "crop": "cherry",
+        "checkpoint_path": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model6_cherry\\best_model.pth",
+        "checkpoint_stage": "INITIAL",
+        "validation_accuracy": 100.0,
+        "validation_macro_f1": 1.0,
+        "num_classes": 2,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "powdery_mildew"
+        },
+        "normalization_mean": [
+            0.14351691,
+            0.18846236,
+            0.11188254
+        ],
+        "normalization_std": [
+            0.18727443,
+            0.24050464,
+            0.15725942
+        ],
+        "architecture": "resnet9",
+        "image_size": 224,
+        "test_status": "CONSUMED_FINAL",
+        "test_evaluated": true,
+        "test_evaluation_timestamp": 1790613639.4916096,
+        "test_accuracy": 100.0,
+        "test_macro_f1": 1.0
+    },
+    {
+        "model_number": 7,
+        "model_name": "model7_corn",
+        "crop": "corn",
+        "checkpoint_path": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model7_corn_refine\\best_refined_model.pth",
+        "checkpoint_stage": "PREVIOUS_REFINE",
+        "validation_accuracy": 90.625,
+        "validation_macro_f1": 0.8840864839761919,
+        "num_classes": 4,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "cercospora_leaf_spot_gray_leaf_spot",
+            "2": "common_rust",
+            "3": "northern_leaf_blight"
+        },
+        "normalization_mean": [
+            0.13903937,
+            0.16719028,
+            0.10428933
+        ],
+        "normalization_std": [
+            0.20518272,
+            0.23928076,
+            0.16130961
+        ],
+        "architecture": "resnet9",
+        "image_size": 224,
+        "test_status": "CONSUMED_FINAL",
+        "test_evaluated": true,
+        "test_evaluation_timestamp": 1790613639.4916096,
+        "test_accuracy": 89.69072164948453,
+        "test_macro_f1": 0.8700300178349637
+    },
+    {
+        "model_number": 8,
+        "model_name": "model8_grape",
+        "crop": "grape",
+        "checkpoint_path": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model8_grape\\best_model.pth",
+        "checkpoint_stage": "INITIAL",
+        "validation_accuracy": 94.5679012345679,
+        "validation_macro_f1": 0.9495409957513201,
+        "num_classes": 4,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "black_rot",
+            "2": "esca_black_measles",
+            "3": "leaf_blight_isariopsis_leaf_spot"
+        },
+        "normalization_mean": [
+            0.13681938,
+            0.17084016,
+            0.08285125
+        ],
+        "normalization_std": [
+            0.1825235,
+            0.21670182,
+            0.11859776
+        ],
+        "architecture": "resnet9",
+        "image_size": 224,
+        "test_status": "CONSUMED_FINAL",
+        "test_evaluated": true,
+        "test_evaluation_timestamp": 1790613639.4916096,
+        "test_accuracy": 91.19804400977995,
+        "test_macro_f1": 0.9147467224639636
+    },
+    {
+        "model_number": 9,
+        "model_name": "model9_peach",
+        "crop": "peach",
+        "checkpoint_path": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model9_peach\\best_model.pth",
+        "checkpoint_stage": "INITIAL",
+        "validation_accuracy": 98.11320754716981,
+        "validation_macro_f1": 0.9611721611721612,
+        "num_classes": 2,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "bacterial_spot"
+        },
+        "normalization_mean": [
+            0.10522229,
+            0.10649589,
+            0.04322645
+        ],
+        "normalization_std": [
+            0.20703991,
+            0.19445668,
+            0.08863733
+        ],
+        "architecture": "resnet9",
+        "image_size": 224,
+        "test_status": "CONSUMED_FINAL",
+        "test_evaluated": true,
+        "test_evaluation_timestamp": 1790613639.4916096,
+        "test_accuracy": 95.88014981273409,
+        "test_macro_f1": 0.918291834747531
+    },
+    {
+        "model_number": 10,
+        "model_name": "model10_pepper",
+        "crop": "pepper",
+        "checkpoint_path": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model10_pepper\\best_model.pth",
+        "checkpoint_stage": "INITIAL",
+        "validation_accuracy": 97.15447154471545,
+        "validation_macro_f1": 0.9702667702667702,
+        "num_classes": 2,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "bacterial_spot"
+        },
+        "normalization_mean": [
+            0.1214166,
+            0.16457595,
+            0.0872918
+        ],
+        "normalization_std": [
+            0.17571826,
+            0.22456476,
+            0.13301843
+        ],
+        "architecture": "resnet9",
+        "image_size": 224,
+        "test_status": "CONSUMED_FINAL",
+        "test_evaluated": true,
+        "test_evaluation_timestamp": 1790613639.4916096,
+        "test_accuracy": 96.8,
+        "test_macro_f1": 0.9664339419978518
+    },
+    {
+        "model_number": 11,
+        "model_name": "model11_strawberry",
+        "crop": "strawberry",
+        "checkpoint_path": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model11_strawberry\\best_model.pth",
+        "checkpoint_stage": "INITIAL",
+        "validation_accuracy": 100.0,
+        "validation_macro_f1": 1.0,
+        "num_classes": 2,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "leaf_scorch"
+        },
+        "normalization_mean": [
+            0.19913457,
+            0.21676643,
+            0.1166481
+        ],
+        "normalization_std": [
+            0.23870961,
+            0.25625631,
+            0.15102065
+        ],
+        "architecture": "resnet9",
+        "image_size": 224,
+        "test_status": "CONSUMED_FINAL",
+        "test_evaluated": true,
+        "test_evaluation_timestamp": 1790613639.4916096,
+        "test_accuracy": 99.37106918238993,
+        "test_macro_f1": 0.9924014336917563
+    }
+]

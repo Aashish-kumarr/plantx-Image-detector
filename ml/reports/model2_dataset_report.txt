@@ -1,0 +1,38 @@
+Model 2 Dataset Report
+======================
+
+Overall Counts:
+  Total Model 2 images: 54305
+  Total Potato: 2152 (4.0%)
+  Total Tomato: 18160 (33.4%)
+  Total Other: 33993 (62.6%)
+
+Per-split Counts: TRAIN (43444 images)
+  Potato: 1721 (4.0%)
+  Tomato: 14442 (33.2%)
+  Other: 27281 (62.8%)
+
+Per-split Counts: VAL (5430 images)
+  Potato: 221 (4.1%)
+  Tomato: 1853 (34.1%)
+  Other: 3356 (61.8%)
+
+Per-split Counts: TEST (5431 images)
+  Potato: 210 (3.9%)
+  Tomato: 1865 (34.3%)
+  Other: 3356 (61.8%)
+
+Class Imbalance Analysis (Training Set):
+  Training frequencies:
+    potato (0): 1721 images
+    tomato (1): 14442 images
+    other (2): 27281 images
+
+  Suggested Balanced CrossEntropy Weights:
+    potato (0): 8.4145
+    tomato (1): 1.0027
+    other (2): 0.5308
+
+  Imbalance conclusion:
+    The most frequent class is 15.9x larger than the least frequent class.
+    Model 2 is significantly imbalanced toward the 'other' class.

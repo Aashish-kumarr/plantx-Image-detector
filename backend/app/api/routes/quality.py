@@ -1,4 +1,4 @@
-"""Quality check route — POST /api/v1/images/{image_id}/quality."""
+﻿"""Quality check route — POST /api/v1/images/{image_id}/quality."""
 
 from fastapi import APIRouter, Depends
 
@@ -38,6 +38,6 @@ async def check_image_quality(
         raise ForbiddenError("You do not own this image.")
 
     result = image_quality_service.run_quality_check(meta)
-    logger.info("Quality check for image_id=%s → status=%s", image_id, result.status)
+    logger.info("Quality check for image_id=%s -> status=%s", image_id, result.status)
     return result
 

@@ -1,1 +1,1 @@
-"""Pydantic data schemas package."""
+﻿"""Pydantic data schemas package."""

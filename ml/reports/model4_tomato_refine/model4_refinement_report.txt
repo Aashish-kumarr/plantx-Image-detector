@@ -1,0 +1,35 @@
+Model 4 - Tomato Disease Refinement Report
+================================================
+
+--- Baseline: Original Best Epoch 4 ---
+Val Accuracy : 80.73%
+Val Macro-F1 : 0.7661
+
+--- Best Refinement Epoch: 7 ---
+Val Accuracy   : 93.47%
+Val Macro-P    : 0.9133
+Val Macro-R    : 0.9148
+Val Macro-F1   : 0.9131
+Val Loss       : 0.2501
+
+Absolute F1 improvement : +0.1470
+Is refinement better?   : YES
+
+--- Per-Class Metrics (Best Refinement) ---
+  healthy                             P=0.9770  R=0.9605  F1=0.9687
+  early_blight                        P=0.8391  R=0.7604  F1=0.7978
+  late_blight                         P=0.8990  R=0.9128  F1=0.9059
+  bacterial_spot                      P=0.9702  R=0.9702  F1=0.9702
+  leaf_mold                           P=0.8421  R=0.9600  F1=0.8972
+  septoria_leaf_spot                  P=0.9765  R=0.8877  F1=0.9300
+  spider_mites                        P=0.8539  R=0.9157  F1=0.8837
+  target_spot                         P=0.8712  R=0.8456  F1=0.8582
+  tomato_mosaic_virus                 P=0.9189  R=0.9444  F1=0.9315
+  tomato_yellow_leaf_curl_virus       P=0.9848  R=0.9905  F1=0.9877
+
+--- Top 5 Confusion Pairs ---
+  actual target_spot                         -> predicted spider_mites                        : 16
+  actual early_blight                        -> predicted late_blight                         : 11
+  actual spider_mites                        -> predicted target_spot                         : 10
+  actual late_blight                         -> predicted early_blight                        : 6
+  actual healthy                             -> predicted spider_mites                        : 5

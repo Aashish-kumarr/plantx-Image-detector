@@ -1,0 +1,60 @@
+Model 2 (14-Class) Training Report (2 Epochs)
+=============================================
+
+--- Epoch 1 ---
+Time: 2234.2s | LR: 1.0e-03
+Train Loss: 1.3202 | Train Acc: 59.11%
+Val Loss: 5.7255 | Val Acc: 23.87%
+Val Macro-F1: 0.2205
+
+  Per-Class Metrics:
+    Apple        -> Prec: 1.0000 | Rec: 0.0095 | F1: 0.0187
+    Blueberry    -> Prec: 0.6842 | Rec: 0.2932 | F1: 0.4105
+    Cherry       -> Prec: 0.1970 | Rec: 0.3438 | F1: 0.2505
+    Corn         -> Prec: 0.9630 | Rec: 0.0662 | F1: 0.1238
+    Grape        -> Prec: 0.9535 | Rec: 0.1007 | F1: 0.1822
+    Orange       -> Prec: 0.1979 | Rec: 1.0000 | F1: 0.3304
+    Peach        -> Prec: 0.9737 | Rec: 0.1462 | F1: 0.2543
+    Pepper       -> Prec: 0.2256 | Rec: 0.4522 | F1: 0.3010
+    Potato       -> Prec: 0.1221 | Rec: 0.8281 | F1: 0.2128
+    Raspberry    -> Prec: 0.8333 | Rec: 0.3333 | F1: 0.4762
+    Soybean      -> Prec: 0.9231 | Rec: 0.0225 | F1: 0.0440
+    Squash       -> Prec: 0.8235 | Rec: 0.0753 | F1: 0.1379
+    Strawberry   -> Prec: 1.0000 | Rec: 0.0710 | F1: 0.1325
+    Tomato       -> Prec: 0.8884 | Rec: 0.1203 | F1: 0.2120
+
+
+--- Epoch 2 ---
+Time: 2118.4s | LR: 1.0e-03
+Train Loss: 0.7971 | Train Acc: 74.87%
+Val Loss: 0.6737 | Val Acc: 76.80%
+Val Macro-F1: 0.7415
+
+  Per-Class Metrics:
+    Apple        -> Prec: 0.8385 | Rec: 0.4259 | F1: 0.5649
+    Blueberry    -> Prec: 0.8898 | Rec: 0.8496 | F1: 0.8692
+    Cherry       -> Prec: 0.8200 | Rec: 0.6406 | F1: 0.7193
+    Corn         -> Prec: 0.7290 | Rec: 0.9720 | F1: 0.8332
+    Grape        -> Prec: 0.8281 | Rec: 0.5209 | F1: 0.6395
+    Orange       -> Prec: 0.9339 | Rec: 0.9658 | F1: 0.9496
+    Peach        -> Prec: 0.8190 | Rec: 0.7510 | F1: 0.7835
+    Pepper       -> Prec: 0.8018 | Rec: 0.7565 | F1: 0.7785
+    Potato       -> Prec: 0.3362 | Rec: 0.8914 | F1: 0.4882
+    Raspberry    -> Prec: 0.7059 | Rec: 0.8000 | F1: 0.7500
+    Soybean      -> Prec: 0.8254 | Rec: 0.8424 | F1: 0.8338
+    Squash       -> Prec: 0.6070 | Rec: 0.9301 | F1: 0.7346
+    Strawberry   -> Prec: 0.4735 | Rec: 0.9226 | F1: 0.6258
+    Tomato       -> Prec: 0.9175 | Rec: 0.7264 | F1: 0.8108
+
+
+Checkpoints:
+  Saved checkpoints/model2_14class/last_model2_14class.pth
+  Saved checkpoints/model2_14class/best_model2_14class.pth (based on Val Macro-F1)
+  Saved results/model2_14class/model2_14class_confusion_matrix.png
+
+Best Epoch: 2
+Best Validation Macro-F1: 0.7415
+Total Training Time: 4353.8 seconds
+Best checkpoint: checkpoints/model2_14class/best_model2_14class.pth
+
+STEP 23 COMPLETE

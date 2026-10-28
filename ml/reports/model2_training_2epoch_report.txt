@@ -1,0 +1,32 @@
+Model 2 Training Report (2 Epochs)
+==================================
+
+Total Training Time: 4387.0 seconds
+Best Validation Macro-F1: 0.6316
+
+Epoch Metrics:
+
+--- Epoch 1 ---
+Time: 2249.8s | LR: 1.0e-03
+Train Loss: 0.8325 | Train Acc: 63.07%
+Val Loss: 0.6576 | Val Acc: 69.08%
+Val Macro-F1: 0.5938
+  Potato -> Prec: 0.2244 | Rec: 0.7647 | F1: 0.3470
+  Tomato -> Prec: 0.6138 | Rec: 0.7453 | F1: 0.6732
+  Other  -> Prec: 0.9069 | Rec: 0.6558 | F1: 0.7612
+
+--- Epoch 2 ---
+Time: 2135.8s | LR: 1.0e-03
+Train Loss: 0.6364 | Train Acc: 75.55%
+Val Loss: 0.5658 | Val Acc: 73.43%
+Val Macro-F1: 0.6316
+  Potato -> Prec: 0.2311 | Rec: 0.8281 | F1: 0.3613
+  Tomato -> Prec: 0.6832 | Rec: 0.7949 | F1: 0.7348
+  Other  -> Prec: 0.9392 | Rec: 0.6946 | F1: 0.7986
+
+Checkpoints:
+  Saved checkpoints/model2/last_model2.pth
+  Saved checkpoints/model2/best_model2.pth (based on Val Macro-F1)
+  Saved results/model2/model2_confusion_matrix.png
+
+STEP 21 COMPLETE

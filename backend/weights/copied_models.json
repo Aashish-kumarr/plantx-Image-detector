@@ -1,0 +1,51 @@
+[
+    {
+        "model_num": 5,
+        "crop": "apple",
+        "dest": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\Plant_disease_detection\\backend\\weights\\model5_apple.pth",
+        "sha256": "7fbec28555f57668707a2a75dcb64be67e40fdd41229bdbbb2e911201deea2a9",
+        "src": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model5_apple_final_refine\\best_final_refined_model.pth"
+    },
+    {
+        "model_num": 6,
+        "crop": "cherry",
+        "dest": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\Plant_disease_detection\\backend\\weights\\model6_cherry.pth",
+        "sha256": "b29e56f5c1059db7f41a93061799940dfe436cf113e0cb3602890aeff2e199e4",
+        "src": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model6_cherry\\best_model.pth"
+    },
+    {
+        "model_num": 7,
+        "crop": "corn",
+        "dest": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\Plant_disease_detection\\backend\\weights\\model7_corn.pth",
+        "sha256": "eedbfaf403d5030673f589568ffc851f599540ed7a0f6e949aab882393cd56cf",
+        "src": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model7_corn_refine\\best_refined_model.pth"
+    },
+    {
+        "model_num": 8,
+        "crop": "grape",
+        "dest": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\Plant_disease_detection\\backend\\weights\\model8_grape.pth",
+        "sha256": "3850da7144c8eec387c1761dd6a3bec3e808c514938d57533c8aa417b32fc725",
+        "src": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model8_grape\\best_model.pth"
+    },
+    {
+        "model_num": 9,
+        "crop": "peach",
+        "dest": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\Plant_disease_detection\\backend\\weights\\model9_peach.pth",
+        "sha256": "371f03ae1dd5cae3fef44120355a1ab3bc77c68d261f0b6abfa7909d753a0f53",
+        "src": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model9_peach\\best_model.pth"
+    },
+    {
+        "model_num": 10,
+        "crop": "pepper",
+        "dest": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\Plant_disease_detection\\backend\\weights\\model10_pepper.pth",
+        "sha256": "9044fedbb8f3d5d0ed080082783080dce5af8f854a845676e598652a48d4990a",
+        "src": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model10_pepper\\best_model.pth"
+    },
+    {
+        "model_num": 11,
+        "crop": "strawberry",
+        "dest": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\Plant_disease_detection\\backend\\weights\\model11_strawberry.pth",
+        "sha256": "a4fe2c7fc7ea7484c82a81637ccd65ee4e2278ca1ef45c6c0dae88c1405ff4e0",
+        "src": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\checkpoints\\model11_strawberry\\best_model.pth"
+    }
+]

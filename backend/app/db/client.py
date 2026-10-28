@@ -1,4 +1,4 @@
-"""MongoDB client singleton for PlantDx backend."""
+﻿"""MongoDB client singleton for PlantDx backend."""
 
 from typing import Optional
 from pymongo import MongoClient

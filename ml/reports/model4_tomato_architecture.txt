@@ -1,0 +1,35 @@
+Model 4 (Tomato) ResNet-9 Architecture Validation Report
+========================================================
+
+Architecture Details:
+  Base Architecture: ResNet-9
+  Output Classes: 10
+  Label Mapping:
+    0=healthy, 1=early_blight, 2=late_blight, 3=bacterial_spot, 4=leaf_mold
+    5=septoria_leaf_spot, 6=spider_mites, 7=target_spot, 8=tomato_mosaic_virus, 9=tomato_yellow_leaf_curl_virus
+  Normalization: Mean=[0.1070, 0.1361, 0.0718], Std=[0.1560, 0.1926, 0.1082]
+  Total Parameters: 6,573,130
+  Trainable Parameters: 6,573,130
+  Approximate FP32 Model Size: 25.07 MB
+
+CUDA Status: Available
+  GPU Name: NVIDIA GeForce RTX 5060 Laptop GPU
+
+Forward Pass:
+  Input Shape: [64, 3, 224, 224]
+  Output Shape: [64, 10] (Expected: [64, 10])
+  Contains NaNs: False
+  Contains Infs: False
+
+Weighted CrossEntropy Weights: [0.9150999784469604, 1.151900053024292, 0.8384000062942505, 0.7979999780654907, 1.187999963760376, 0.8756999969482422, 0.8895999789237976, 0.9689000248908997, 1.8759000301361084, 0.4986000061035156]
+  Sanity Loss Value: 2.3021 (Finite: True)
+
+Gradient Check Result:
+  First Conv grad norm: 0.4148 (Valid: True)
+  Residual Block 1 grad norm: 0.2718 (Valid: True)
+  Residual Block 2 grad norm: 0.5414 (Valid: True)
+  Final Linear grad norm: 3.6238 (Valid: True)
+
+Peak GPU Allocated Memory: 11738.14 MB
+
+MODEL 4 ARCHITECTURE VALIDATION PASSED

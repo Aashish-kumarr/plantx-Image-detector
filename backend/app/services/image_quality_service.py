@@ -1,4 +1,4 @@
-"""Product image quality service — Sprint A deterministic development stub.
+﻿"""Product image quality service — Sprint A deterministic development stub.
 
 IMPORTANT — TEMPORARY IMPLEMENTATION:
     This service does NOT implement real blur detection, resolution measurement,

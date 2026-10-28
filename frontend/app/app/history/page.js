@@ -17,35 +17,52 @@ export default function HistoryPage() {
         setLoading(true);
         const data = await listAnalyses({ skip: 0, limit: 100 });
         const items = (data.items || []).map((item) => {
-          const cropName =
-            item.crop_check?.label === "tomato"
-              ? "Tomato"
-              : item.crop_check?.label === "potato"
-              ? "Potato"
-              : "Other";
+          // Generic crop label — capitalize whatever Model 2 returned
+          const cropLabel = item.crop_check?.label
+            ? item.crop_check.label.charAt(0).toUpperCase() + item.crop_check.label.slice(1)
+            : "—";
 
-          const resultTitle =
-            item.prediction?.display_name ||
-            (item.status === "healthy"
-              ? "Healthy result"
-              : item.status === "not_leaf"
-              ? "No leaf detected"
-              : item.status === "unsupported_crop"
-              ? "Unsupported crop"
-              : "Analysis failed");
+          // Disease-supported unsupported crops show crop name, no disease result
+          const isDiseaseUnsupported =
+            item.prediction?.disease_supported === false;
 
-          const scorePct = item.prediction?.score != null ? Math.round(item.prediction.score * 100) : null;
+          const resultTitle = isDiseaseUnsupported
+            ? `${cropLabel} — disease classification not supported`
+            : item.prediction?.display_name ||
+              (item.status === "healthy"
+                ? cropLabel
+                  ? `${cropLabel} — Healthy`
+                  : "Healthy result"
+                : item.status === "not_leaf"
+                ? "No leaf detected"
+                : item.status === "unsupported_crop"
+                ? `${cropLabel || "Crop"} detected`
+                : "Analysis failed");
+
+          // Backend returns 0–1; multiply by 100 for display. Guard null.
+          const scorePct =
+            item.prediction?.score != null
+              ? Math.round(item.prediction.score * 100)
+              : null;
 
           return {
             id: item.analysis_id,
             imageName: item.image?.filename || "specimen.jpg",
-            crop: cropName,
+            crop: cropLabel,
             cropId: item.crop_check?.label || "other",
             result: resultTitle,
             resultStatus: item.status,
+            isDiseaseUnsupported,
             confidenceScore: scorePct,
-            qualityStatus: item.quality?.status === "passed" ? "Quality: Passed" : "Needs Attention",
-            date: new Date(item.created_at).toLocaleDateString([], { month: "short", day: "numeric", year: "numeric" }),
+            qualityStatus:
+              item.quality?.status === "passed"
+                ? "Quality: Passed"
+                : "Needs Attention",
+            date: new Date(item.created_at).toLocaleDateString([], {
+              month: "short",
+              day: "numeric",
+              year: "numeric",
+            }),
             imageUrl: "/images/results/sample-healthy-leaf.jpg",
           };
         });
@@ -61,10 +78,9 @@ export default function HistoryPage() {
   }, []);
 
   const filteredRecords = records.filter((record) => {
-    if (filter === "tomato" && record.cropId !== "tomato") return false;
-    if (filter === "potato" && record.cropId !== "potato") return false;
     if (filter === "healthy" && record.resultStatus !== "healthy") return false;
     if (filter === "disease" && record.resultStatus !== "disease_detected") return false;
+    if (filter === "unsupported" && !record.isDiseaseUnsupported) return false;
 
     if (search.trim()) {
       const q = search.toLowerCase();
@@ -93,10 +109,9 @@ export default function HistoryPage() {
         <div className="flex flex-wrap items-center gap-1.5">
           {[
             { id: "all", label: "All" },
-            { id: "tomato", label: "Tomato" },
-            { id: "potato", label: "Potato" },
             { id: "healthy", label: "Healthy" },
             { id: "disease", label: "Potential disease" },
+            { id: "unsupported", label: "Disease unsupported" },
           ].map((item) => (
             <button
               key={item.id}

@@ -1,0 +1,31 @@
+Model 2 Preprocessing & DataLoader Report
+=========================================
+
+Normalization Information:
+  Mean: [0.12574799358844757, 0.1572403758764267, 0.08566316962242126]
+  Std: [0.16207990050315857, 0.19857822358608246, 0.11496777832508087]
+  Images used for computation: 43444
+  DSP Preprocessing Applied: True
+
+DSP & Augmentation Strategy:
+  DSP Pipeline: Reused Model 1 (HSV masking + morphology -> crop/resize to 224x224)
+  Training Augmentation: Reused Model 1 (Flip, Rotation, Affine, ColorJitter)
+
+DataLoader Configuration:
+  batch_size: 64
+  num_workers: 0
+  pin_memory: False
+
+Dataset Counts:
+  Train: 43444
+  Validation: 5430
+  Test: 5431
+
+Batch Verification (Train):
+  Tensor shape: [64, 3, 224, 224] (Expected: [64, 3, 224, 224] or smaller for last batch)
+  Labels in batch: [0, 1, 2] (Must be subset of [0, 1, 2])
+  Contains NaNs: False
+  Contains Infs: False
+  Batch test: PASSED
+
+STEP 19 PASSED

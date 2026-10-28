@@ -216,7 +216,7 @@ export default function AnalyzeWorkspace() {
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-sm bg-surface-container-high text-on-surface-variant font-mono text-[11px] font-medium border border-surface-variant/40">
                   <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" />
-                  Supported crops: Tomato • Potato
+                  Supported: Apple, Cherry, Corn, Grape, Peach, Pepper, Potato, Strawberry, Tomato
                 </span>
               </div>
             ) : currentState === "quality_passed" ? (

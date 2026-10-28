@@ -1,4 +1,4 @@
-"""Shared common schemas for API responses and errors."""
+﻿"""Shared common schemas for API responses and errors."""
 
 from pydantic import BaseModel, Field
 

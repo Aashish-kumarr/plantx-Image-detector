@@ -497,13 +497,13 @@ reports/model1_dsp_mask_statistics.csv
 Current local project location:
 
 ```text
-c:\Users\ak021\Desktop\plant image detector
+C:\Users\ak021\Desktop\workspace\plantDx\plant image detector
 ```
 
 Dataset directory:
 
 ```text
-c:\Users\ak021\Desktop\plant image detector\dataset
+C:\Users\ak021\Desktop\workspace\plantDx\plant image detector\dataset
 ```
 
 ---
@@ -513,7 +513,7 @@ c:\Users\ak021\Desktop\plant image detector\dataset
 Exact inspected path:
 
 ```text
-c:\Users\ak021\Desktop\plant image detector\dataset\plantvillage dataset
+C:\Users\ak021\Desktop\workspace\plantDx\plant image detector\dataset\plantvillage dataset
 ```
 
 The local PlantVillage copy contains:
@@ -688,7 +688,7 @@ Places365 filtered validation subset
 Exact path:
 
 ```text
-c:\Users\ak021\Desktop\plant image detector\dataset\caltech256
+C:\Users\ak021\Desktop\workspace\plantDx\plant image detector\dataset\caltech256
 ```
 
 Source:
@@ -742,7 +742,7 @@ Only SAFE_NON_LEAF categories are used for Model 1.
 Exact path:
 
 ```text
-c:\Users\ak021\Desktop\plant image detector\dataset\places365_non_leaf
+C:\Users\ak021\Desktop\workspace\plantDx\plant image detector\dataset\places365_non_leaf
 ```
 
 Source:

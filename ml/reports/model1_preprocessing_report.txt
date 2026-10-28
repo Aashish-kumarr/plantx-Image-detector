@@ -1,0 +1,43 @@
+Model 1 Preprocessing Report
+============================
+Number of training images used to compute statistics: 88869
+Computed RGB mean: [0.48668593168258667, 0.48568451404571533, 0.43330273032188416]
+Computed RGB standard deviation: [0.25114908814430237, 0.2400001436471939, 0.26495781540870667]
+Target image size: [3, 224, 224]
+
+Preprocessing sequence:
+Compose(
+    ConvertRGB()
+    Resize(size=224, interpolation=bilinear, max_size=None, antialias=True)
+    CenterCrop(size=(224, 224))
+    ToTensor()
+    Normalize(mean=[0.48668593168258667, 0.48568451404571533, 0.43330273032188416], std=[0.25114908814430237, 0.2400001436471939, 0.26495781540870667])
+)
+
+Sample Verification Results:
+
+Source: plantvillage
+  Path: C:\Users\ak021\Desktop\workspace\plantDx\plant image detector\dataset\plantvillage dataset\color\Peach___Bacterial_spot\e9c9d302-9a34-4ad8-89a8-08dcf731a8f8___Rutg._Bact.S 1814.JPG
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  NaNs present: False
+  Infs present: False
+  Status: PASS
+
+Source: caltech256
+  Path: C:\Users\ak021\Desktop\workspace\plantDx\plant image detector\dataset\caltech256\256_ObjectCategories\230.trilobite-101\230_0003.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  NaNs present: False
+  Infs present: False
+  Status: PASS
+
+Source: places365
+  Path: C:\Users\ak021\Desktop\workspace\plantDx\plant image detector\dataset\places365_non_leaf\t_train_station_platform\Places365_val_00036249.jpg
+  Shape (3x224x224 expected): [3, 224, 224]
+  Dtype (float32 expected): torch.float32
+  NaNs present: False
+  Infs present: False
+  Status: PASS
+
+Total failures encountered: 0

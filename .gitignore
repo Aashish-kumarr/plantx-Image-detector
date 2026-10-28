@@ -1,0 +1,70 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.Python
+
+# Node.js & Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+.npm
+*.log
+
+# Environment variables & local credentials
+.env
+.env.local
+.env.*.local
+
+# IDE & OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.stitch/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local development data & uploaded images (do not commit runtime storage)
+backend/data/
+data/
+
+# Model Weights & Binary Checkpoints (excluded per code-only policy; see models_manifest.json)
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.h5
+*.onnx
+weights_backup_pre_refinement/
+backend/app/ml/pytorch_models/weights/*.pth
+backend/app/ml/pytorch_models/weights_backup_pre_refinement/
+backend/weights/*.pth
+!backend/weights/models_manifest.json
+!backend/weights/copied_models.json
+!backend/weights/README.md
+!backend/app/ml/pytorch_models/weights/README.md
+
+# Datasets, caches & large archives
+dataset/
+datasets/
+cache/
+*.tar
+*.zip
+*.gz
+places365_train_standard.txt
+places365_val.txt

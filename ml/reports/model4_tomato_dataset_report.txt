@@ -1,0 +1,73 @@
+Model 4 (Tomato) Dataset & Preprocessing Report
+===============================================
+
+Dataset Verification:
+  Total Tomato images: 18160
+  Train: 14442
+  Val: 1853
+  Test: 1865
+  Missing files: 0
+  Duplicate paths: 0
+  Non-Tomato classes: False
+  Grayscale/Segmented images: False
+  Exactly 10 classes: True
+
+Class Mapping & Distribution:
+  [0] Tomato___healthy -> healthy: Total=1591 | Train=1269 | Val=177 | Test=145
+  [1] Tomato___Early_blight -> early_blight: Total=1000 | Train=801 | Val=96 | Test=103
+  [2] Tomato___Late_blight -> late_blight: Total=1909 | Train=1512 | Val=195 | Test=202
+  [3] Tomato___Bacterial_spot -> bacterial_spot: Total=2127 | Train=1669 | Val=235 | Test=223
+  [4] Tomato___Leaf_Mold -> leaf_mold: Total=952 | Train=753 | Val=100 | Test=99
+  [5] Tomato___Septoria_leaf_spot -> septoria_leaf_spot: Total=1771 | Train=1386 | Val=187 | Test=198
+  [6] Tomato___Spider_mites Two-spotted_spider_mite -> spider_mites: Total=1676 | Train=1343 | Val=166 | Test=167
+  [7] Tomato___Target_Spot -> target_spot: Total=1404 | Train=1132 | Val=136 | Test=136
+  [8] Tomato___Tomato_mosaic_virus -> tomato_mosaic_virus: Total=373 | Train=302 | Val=36 | Test=35
+  [9] Tomato___Tomato_Yellow_Leaf_Curl_Virus -> tomato_yellow_leaf_curl_virus: Total=5357 | Train=4275 | Val=525 | Test=557
+
+Normalization Extracted:
+  Mean: [0.10703777521848679, 0.13608907163143158, 0.07176642119884491]
+  Std: [0.15597090125083923, 0.19257518649101257, 0.10817811638116837]
+
+Imbalance Analysis:
+  Maximum class (Train): 4275 images
+  Minimum class (Train): 302 images
+  Imbalance ratio (Max/Min): 14.2x
+
+  Standard Inverse-Frequency Balanced Weights:
+    healthy: 1.1381
+    early_blight: 1.8030
+    late_blight: 0.9552
+    bacterial_spot: 0.8653
+    leaf_mold: 1.9179
+    septoria_leaf_spot: 1.0420
+    spider_mites: 1.0754
+    target_spot: 1.2758
+    tomato_mosaic_virus: 4.7821
+    tomato_yellow_leaf_curl_virus: 0.3378
+
+  Square-Root Inverse-Frequency Weights:
+    healthy: 0.9151
+    early_blight: 1.1519
+    late_blight: 0.8384
+    bacterial_spot: 0.7980
+    leaf_mold: 1.1880
+    septoria_leaf_spot: 0.8757
+    spider_mites: 0.8896
+    target_spot: 0.9689
+    tomato_mosaic_virus: 1.8759
+    tomato_yellow_leaf_curl_virus: 0.4986
+
+  Recommended Mild Weighting Strategy:
+    Due to the severe imbalance (e.g., Target Spot/Tomato Mosaic Virus vs others), applying full
+    inverse-frequency weighting could cause drastic over-prediction of minority classes.
+    Therefore, we recommend using Square-Root Inverse-Frequency weights, which smooths the weights
+    to keep the loss stable while providing necessary minority attention.
+
+DataLoader Verification (Train Batch):
+  Shape: [64, 3, 224, 224] (Expected: [64, 3, 224, 224] or smaller)
+  Contains NaN: False
+  Contains Inf: False
+  Labels in batch valid (between 0 and 9): True
+  Status: PASSED
+
+STEP 27 TOMATO METADATA COMPLETE

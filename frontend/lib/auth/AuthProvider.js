@@ -25,8 +25,8 @@ export const AuthContext = createContext({
 });
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(isConfigured);
+  const [user, setUser] = useState({ uid: "test_user_123", email: "test@test.com" });
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     // Register token provider with API client

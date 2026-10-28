@@ -1,0 +1,15 @@
+Model 1 Metadata Validation Report
+==================================
+Total images: 111087
+Total Leaf images: 54305
+Total Non-Leaf images: 56782
+Leaf/Non-Leaf percentage: 48.89% / 51.11%
+PlantVillage image count: 54305
+Caltech-256 image count: 27882
+Places365 image count: 28900
+Missing files: 0
+Unreadable files: 0
+Duplicate paths: 0
+Exact duplicate image-content count: 37
+Forbidden PlantVillage versions found: 0
+Excluded Caltech categories found: 0

@@ -1,1 +1,1 @@
-"""Core application modules (config, logging, errors)."""
+﻿"""Core application modules (config, logging, errors)."""

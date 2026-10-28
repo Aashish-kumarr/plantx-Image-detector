@@ -1,0 +1,70 @@
+{
+  "model5_apple": {
+    "0": "healthy",
+    "1": "apple_scab",
+    "2": "black_rot",
+    "3": "cedar_apple_rust"
+  },
+  "model5_apple_reverse": {
+    "healthy": 0,
+    "apple_scab": 1,
+    "black_rot": 2,
+    "cedar_apple_rust": 3
+  },
+  "model6_cherry": {
+    "0": "healthy",
+    "1": "powdery_mildew"
+  },
+  "model6_cherry_reverse": {
+    "healthy": 0,
+    "powdery_mildew": 1
+  },
+  "model7_corn": {
+    "0": "healthy",
+    "1": "cercospora_leaf_spot_gray_leaf_spot",
+    "2": "common_rust",
+    "3": "northern_leaf_blight"
+  },
+  "model7_corn_reverse": {
+    "healthy": 0,
+    "cercospora_leaf_spot_gray_leaf_spot": 1,
+    "common_rust": 2,
+    "northern_leaf_blight": 3
+  },
+  "model8_grape": {
+    "0": "healthy",
+    "1": "black_rot",
+    "2": "esca_black_measles",
+    "3": "leaf_blight_isariopsis_leaf_spot"
+  },
+  "model8_grape_reverse": {
+    "healthy": 0,
+    "black_rot": 1,
+    "esca_black_measles": 2,
+    "leaf_blight_isariopsis_leaf_spot": 3
+  },
+  "model9_peach": {
+    "0": "healthy",
+    "1": "bacterial_spot"
+  },
+  "model9_peach_reverse": {
+    "healthy": 0,
+    "bacterial_spot": 1
+  },
+  "model10_pepper": {
+    "0": "healthy",
+    "1": "bacterial_spot"
+  },
+  "model10_pepper_reverse": {
+    "healthy": 0,
+    "bacterial_spot": 1
+  },
+  "model11_strawberry": {
+    "0": "healthy",
+    "1": "leaf_scorch"
+  },
+  "model11_strawberry_reverse": {
+    "healthy": 0,
+    "leaf_scorch": 1
+  }
+}

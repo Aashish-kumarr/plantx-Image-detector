@@ -1,0 +1,25 @@
+Model 1 DSP Cache Benchmark Report
+==================================
+Available disk space: 19.19 GB
+
+Cache-generation speed: 1000 images in 101.09s (9.9 imgs/s)
+Integrity check failures (lossless verification): 0
+
+Storage Formats Tested:
+  Format: PNG
+    Size per 1000 images: 28.94 MB
+    Average size per image: 29.64 KB
+    Projected size for 111087 images: 3.14 GB
+  Format: Lossless WebP
+    Size per 1000 images: 19.12 MB
+    Average size per image: 19.58 KB
+    Projected size for 111087 images: 2.07 GB
+
+Disk check: Projected cache size is safe (>5GB remaining).
+
+Performance:
+  Current on-the-fly throughput: ~49.7 imgs/s
+  Cached DataLoader throughput: 21.5 imgs/s (tested on WebP)
+  Estimated speed improvement: 0.4x faster
+
+Recommended cache format: Lossless WebP (smaller size, fast loading).

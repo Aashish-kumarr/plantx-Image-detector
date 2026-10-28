@@ -1,0 +1,49 @@
+Model 3 (Potato) Dataset & Preprocessing Report
+===============================================
+
+Dataset Verification:
+  Total Potato images: 2152
+  Train: 1721
+  Val: 221
+  Test: 210
+  Missing files: 0
+  Duplicate paths: 0
+  Non-Potato classes: False
+  Grayscale/Segmented images: False
+
+Class Distribution:
+  [0] healthy: Total=152 | Train=121 | Val=15 | Test=16
+  [1] early_blight: Total=1000 | Train=800 | Val=105 | Test=95
+  [2] late_blight: Total=1000 | Train=800 | Val=101 | Test=99
+
+Normalization Extracted:
+  Mean: [0.16266366839408875, 0.18502847850322723, 0.1103939414024353]
+  Std: [0.19566087424755096, 0.2237817943096161, 0.14138148725032806]
+
+Imbalance Analysis:
+  Imbalance ratio (Max/Min): 6.6x
+
+  Standard Inverse-Frequency Balanced Weights:
+    healthy: 4.7410
+    early_blight: 0.7171
+    late_blight: 0.7171
+
+  Square-Root Inverse-Frequency Weights:
+    healthy: 1.6875
+    early_blight: 0.6563
+    late_blight: 0.6563
+
+  Recommended Mild Weighting Strategy:
+    Due to the severe under-representation of the 'healthy' class, applying full inverse-frequency
+    weighting could cause drastic over-prediction of healthy leaves, similar to Model 2's potato bias.
+    Therefore, we recommend using Square-Root Inverse-Frequency weights, which scales the healthy class
+    weight to ~1.7 instead of ~4.8, keeping the loss stable while providing necessary minority attention.
+
+DataLoader Verification (Train Batch):
+  Shape: [64, 3, 224, 224] (Expected: [64, 3, 224, 224] or smaller)
+  Contains NaN: False
+  Contains Inf: False
+  Labels in batch: [0, 1, 2] (Subset of [0, 1, 2])
+  Status: PASSED
+
+STEP 23 POTATO METADATA COMPLETE

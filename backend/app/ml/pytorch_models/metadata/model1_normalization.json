@@ -1,0 +1,28 @@
+{
+    "mean": [
+        0.11508214473724365,
+        0.12306653708219528,
+        0.08133121579885483
+    ],
+    "std": [
+        0.20337256789207458,
+        0.20957866311073303,
+        0.1593412160873413
+    ],
+    "image_size": [
+        3,
+        224,
+        224
+    ],
+    "computed_from": "train_split_only",
+    "number_of_images": 88869,
+    "dsp_preprocessing": true,
+    "split": "train",
+    "dsp_settings": {
+        "channel": "HSV Saturation",
+        "filter": "GaussianBlur 5x5",
+        "thresholding": "Otsu",
+        "morphology": "Open (2), Close (2), Ellipse 5x5",
+        "noise_removal": "Largest Connected Component"
+    }
+}

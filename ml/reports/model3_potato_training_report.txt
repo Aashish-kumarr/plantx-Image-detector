@@ -1,0 +1,89 @@
+Model 3 (Potato) Training Report
+================================
+
+--- Epoch 1 ---
+Time: 87.6s | LR: 1.0e-03
+Train Loss: 0.5531 | Train Acc: 75.89%
+Val Loss: 1.9243 | Val Acc: 61.54%
+Val Macro-F1: 0.4013
+
+  Per-Class Metrics:
+    Healthy      -> Prec: 0.0000 | Rec: 0.0000 | F1: 0.0000
+    Early Blight -> Prec: 1.0000 | Rec: 0.3333 | F1: 0.5000
+    Late Blight  -> Prec: 0.5430 | Rec: 1.0000 | F1: 0.7038
+
+
+--- Epoch 2 ---
+Time: 82.3s | LR: 1.0e-03
+Train Loss: 0.4061 | Train Acc: 83.56%
+Val Loss: 4.2817 | Val Acc: 45.70%
+Val Macro-F1: 0.2091
+
+  Per-Class Metrics:
+    Healthy      -> Prec: 0.0000 | Rec: 0.0000 | F1: 0.0000
+    Early Blight -> Prec: 0.0000 | Rec: 0.0000 | F1: 0.0000
+    Late Blight  -> Prec: 0.4570 | Rec: 1.0000 | F1: 0.6273
+
+
+--- Epoch 3 ---
+Time: 82.9s | LR: 1.0e-03
+Train Loss: 0.3735 | Train Acc: 84.60%
+Val Loss: 0.3707 | Val Acc: 86.88%
+Val Macro-F1: 0.8680
+
+  Per-Class Metrics:
+    Healthy      -> Prec: 0.8667 | Rec: 0.8667 | F1: 0.8667
+    Early Blight -> Prec: 0.9878 | Rec: 0.7714 | F1: 0.8663
+    Late Blight  -> Prec: 0.7903 | Rec: 0.9703 | F1: 0.8711
+
+
+--- Epoch 4 ---
+Time: 82.8s | LR: 1.0e-03
+Train Loss: 0.3524 | Train Acc: 86.11%
+Val Loss: 0.9377 | Val Acc: 78.73%
+Val Macro-F1: 0.5440
+
+  Per-Class Metrics:
+    Healthy      -> Prec: 0.0000 | Rec: 0.0000 | F1: 0.0000
+    Early Blight -> Prec: 0.9867 | Rec: 0.7048 | F1: 0.8222
+    Late Blight  -> Prec: 0.6849 | Rec: 0.9901 | F1: 0.8097
+
+
+--- Epoch 5 ---
+Time: 82.6s | LR: 1.0e-03
+Train Loss: 0.3281 | Train Acc: 88.67%
+Val Loss: 1.2835 | Val Acc: 61.54%
+Val Macro-F1: 0.6437
+
+  Per-Class Metrics:
+    Healthy      -> Prec: 0.9231 | Rec: 0.8000 | F1: 0.8571
+    Early Blight -> Prec: 1.0000 | Rec: 0.2286 | F1: 0.3721
+    Late Blight  -> Prec: 0.5435 | Rec: 0.9901 | F1: 0.7018
+
+
+--- Epoch 6 ---
+Time: 82.5s | LR: 5.0e-04
+Train Loss: 0.2757 | Train Acc: 89.77%
+Val Loss: 1.4141 | Val Acc: 72.40%
+Val Macro-F1: 0.5690
+
+  Per-Class Metrics:
+    Healthy      -> Prec: 1.0000 | Rec: 0.1333 | F1: 0.2353
+    Early Blight -> Prec: 1.0000 | Rec: 0.5429 | F1: 0.7037
+    Late Blight  -> Prec: 0.6235 | Rec: 1.0000 | F1: 0.7681
+
+
+Summary:
+  Best Epoch: 3
+  Best Validation Accuracy: 86.88%
+  Best Validation Macro-F1: 0.8680
+    Healthy      -> Prec: 0.8667 | Rec: 0.8667 | F1: 0.8667
+    Early Blight -> Prec: 0.9878 | Rec: 0.7714 | F1: 0.8663
+    Late Blight  -> Prec: 0.7903 | Rec: 0.9703 | F1: 0.8711
+
+  Total training time: 501.4 seconds
+  Early stopping occurred: True
+  Final learning rate: 5.0e-04
+  Best checkpoint path: checkpoints/model3_potato/best_model3_potato.pth
+
+STEP 26 COMPLETE

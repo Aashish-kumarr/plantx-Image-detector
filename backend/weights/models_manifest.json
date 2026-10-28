@@ -1,0 +1,93 @@
+[
+    {
+        "model_number": 1,
+        "name": "Leaf vs Non-Leaf",
+        "task": "leaf_detection",
+        "crop": "all",
+        "checkpoint_file": "model1_leaf.pth"
+    },
+    {
+        "model_number": 2,
+        "name": "14-Crop Classifier",
+        "task": "crop_classification",
+        "crop": "all",
+        "checkpoint_file": "model2_crop.pth"
+    },
+    {
+        "model_number": 3,
+        "name": "Potato Disease",
+        "task": "disease_classification",
+        "crop": "potato",
+        "checkpoint_file": "model3_potato.pth"
+    },
+    {
+        "model_number": 4,
+        "name": "Tomato Disease",
+        "task": "disease_classification",
+        "crop": "tomato",
+        "checkpoint_file": "model4_tomato.pth"
+    },
+    {
+        "model_number": 5,
+        "name": "Apple Disease",
+        "task": "disease_classification",
+        "crop": "apple",
+        "checkpoint_file": "model5_apple.pth",
+        "final_test_accuracy": 91.54,
+        "final_test_macro_f1": 0.9053
+    },
+    {
+        "model_number": 6,
+        "name": "Cherry Disease",
+        "task": "disease_classification",
+        "crop": "cherry",
+        "checkpoint_file": "model6_cherry.pth",
+        "final_test_accuracy": 100.0,
+        "final_test_macro_f1": 1.0
+    },
+    {
+        "model_number": 7,
+        "name": "Corn Disease",
+        "task": "disease_classification",
+        "crop": "corn",
+        "checkpoint_file": "model7_corn.pth",
+        "final_test_accuracy": 89.69,
+        "final_test_macro_f1": 0.87
+    },
+    {
+        "model_number": 8,
+        "name": "Grape Disease",
+        "task": "disease_classification",
+        "crop": "grape",
+        "checkpoint_file": "model8_grape.pth",
+        "final_test_accuracy": 91.2,
+        "final_test_macro_f1": 0.9147
+    },
+    {
+        "model_number": 9,
+        "name": "Peach Disease",
+        "task": "disease_classification",
+        "crop": "peach",
+        "checkpoint_file": "model9_peach.pth",
+        "final_test_accuracy": 95.88,
+        "final_test_macro_f1": 0.9183
+    },
+    {
+        "model_number": 10,
+        "name": "Pepper Disease",
+        "task": "disease_classification",
+        "crop": "pepper",
+        "checkpoint_file": "model10_pepper.pth",
+        "final_test_accuracy": 96.8,
+        "final_test_macro_f1": 0.9664
+    },
+    {
+        "model_number": 11,
+        "name": "Strawberry Disease",
+        "task": "disease_classification",
+        "crop": "strawberry",
+        "checkpoint_file": "model11_strawberry.pth",
+        "final_test_accuracy": 99.37,
+        "final_test_macro_f1": 0.9924
+    }
+]

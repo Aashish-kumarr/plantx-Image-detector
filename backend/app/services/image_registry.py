@@ -1,4 +1,4 @@
-"""Lightweight in-memory image metadata registry for Sprint A.
+﻿"""Lightweight in-memory image metadata registry for Sprint A.
 
 After an image is uploaded it must be referenceable by image_id before an
 analysis document is created.  This registry bridges the gap without

@@ -1,0 +1,31 @@
+Model 1 Split Validation Report
+===============================
+Total images: 111087
+Train count and percentage: 88869 (80.00%)
+Val count and percentage: 11108 (10.00%)
+Test count and percentage: 11110 (10.00%)
+
+Leaf/Non-Leaf counts for each split:
+  Train: Leaf=43444, Non-Leaf=45425
+  Val: Leaf=5430, Non-Leaf=5678
+  Test: Leaf=5431, Non-Leaf=5679
+
+PlantVillage count for each split:
+  Train: 43444
+  Val: 5430
+  Test: 5431
+
+Caltech-256 count for each split:
+  Train: 22305
+  Val: 2788
+  Test: 2789
+
+Places365 count for each split:
+  Train: 23120
+  Val: 2890
+  Test: 2890
+
+Duplicate-content groups detected: 37
+Number of duplicate-content groups crossing splits: 0
+Missing paths: 0
+Duplicate CSV rows: 0

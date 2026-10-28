@@ -1,0 +1,10 @@
+The final test sets for Models 5–11 have been evaluated.
+
+They must NOT be used for:
+- checkpoint selection
+- model refinement
+- hyperparameter tuning
+- architecture selection
+- augmentation selection
+
+Any future model development requires a new untouched test set.

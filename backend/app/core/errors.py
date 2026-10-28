@@ -1,4 +1,4 @@
-"""Structured error handling infrastructure for PlantDx FastAPI application."""
+﻿"""Structured error handling infrastructure for PlantDx FastAPI application."""
 
 from fastapi import FastAPI, Request, status
 from fastapi.exceptions import RequestValidationError

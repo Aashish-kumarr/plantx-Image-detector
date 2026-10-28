@@ -1,0 +1,22 @@
+Model 1 DataLoader Optimization Benchmark
+=========================================
+Batch Size: 64
+Batches measured per config: 50
+Warmup batches: 2
+
+Workers  | Prefetch | Persist  | CV_Thr   | s/batch  | imgs/sec | Stable
+------------------------------------------------------------------------
+4        | 2        | False    | Auto     | 0.454    | 140.8    | Yes
+4        | 2        | False    | 1        | 0.432    | 148.1    | Yes
+6        | 2        | True     | 1        | 0.171    | 374.6    | Yes
+8        | 2        | True     | Auto     | 0.127    | 505.8    | Yes
+8        | 2        | True     | 1        | 0.094    | 678.4    | Yes
+10       | 2        | True     | 1        | 0.090    | 715.0    | Yes
+12       | 2        | True     | 1        | 0.348    | 184.1    | Yes
+8        | 4        | True     | 1        | 0.089    | 720.8    | Yes
+10       | 4        | True     | 1        | 0.094    | 680.9    | Yes
+12       | 4        | True     | 1        | 0.377    | 169.8    | Yes
+
+Conclusion:
+Fastest stable configuration achieved 720.8 imgs/sec.
+Recommended Settings: num_workers=8, prefetch_factor=4, persistent_workers=True, cv2.setNumThreads(1)

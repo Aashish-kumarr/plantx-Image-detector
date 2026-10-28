@@ -1,4 +1,4 @@
-"""Pydantic schemas for image quality check results.
+﻿"""Pydantic schemas for image quality check results.
 
 Matches docs/api-contract.md — Section 2: Image Quality Check.
 """

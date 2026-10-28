@@ -1,0 +1,30 @@
+Model 2 (14-Class) ResNet-9 Architecture Validation Report
+========================================================
+
+Architecture Details:
+  Base Architecture: ResNet-9 (Reused Model 1 Architecture)
+  Output Classes: 14
+  Label Mapping: 0=apple, 1=blueberry, 2=cherry, 3=corn, 4=grape, 5=orange, 6=peach, 7=pepper, 8=potato, 9=raspberry, 10=soybean, 11=squash, 12=strawberry, 13=tomato
+  Total Parameters: 6,575,182
+
+CUDA Status: Available
+  GPU Name: NVIDIA GeForce RTX 5060 Laptop GPU
+
+Forward Pass:
+  Input Shape: [64, 3, 224, 224]
+  Output Shape: [64, 14] (Expected: [64, 14])
+  Contains NaNs: False
+  Contains Infs: False
+
+Weighted CrossEntropy Weights: [0.839900016784668, 1.2223999500274658, 1.0980000495910645, 0.7702999711036682, 0.7421000003814697, 0.6420000195503235, 0.9223999977111816, 0.9539999961853027, 1.0270999670028687, 2.4479000568389893, 0.6690999865531921, 1.1053999662399292, 1.204699993133545, 0.3546000123023987]
+  Sanity Loss Value: 2.7255 (Finite: True)
+
+Gradient Check Result:
+  First Conv grad norm: 0.5896 (Valid: True)
+  Residual Block 1 grad norm: 0.3378 (Valid: True)
+  Residual Block 2 grad norm: 0.5236 (Valid: True)
+  Final Linear grad norm: 4.5544 (Valid: True)
+
+Peak GPU Allocated Memory: 11738.16 MB
+
+MODEL 2 ARCHITECTURE VALIDATION PASSED

@@ -1,4 +1,4 @@
-"""Analysis repository — owns all MongoDB interactions for the analyses collection.
+﻿"""Analysis repository — owns all MongoDB interactions for the analyses collection.
 
 Routes and services must never query MongoDB directly.
 

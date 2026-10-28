@@ -1,0 +1,91 @@
+Model 1 DSP Large Audit Report
+==============================
+
+Group: PlantVillage
+  Number of images: 1000
+  Mean foreground %: 36.32%
+  Median foreground %: 37.80%
+  Standard deviation: 15.75%
+  Minimum: 0.49%
+  Maximum: 94.20%
+  5th percentile: 9.49%
+  25th percentile: 24.86%
+  75th percentile: 47.46%
+  95th percentile: 59.97%
+  Foreground Bins:
+    < 1%: 4
+    1-5%: 21
+    5-10%: 33
+    10-25%: 193
+    25-50%: 559
+    50-75%: 183
+    > 75%: 7
+
+Group: Caltech-256
+  Number of images: 1000
+  Mean foreground %: 26.55%
+  Median foreground %: 20.94%
+  Standard deviation: 21.59%
+  Minimum: 0.00%
+  Maximum: 95.76%
+  5th percentile: 1.58%
+  25th percentile: 8.97%
+  75th percentile: 39.70%
+  95th percentile: 68.31%
+  Foreground Bins:
+    < 1%: 37
+    1-5%: 116
+    5-10%: 126
+    10-25%: 284
+    25-50%: 274
+    50-75%: 132
+    > 75%: 31
+
+Group: Places365
+  Number of images: 1000
+  Mean foreground %: 25.41%
+  Median foreground %: 21.33%
+  Standard deviation: 19.19%
+  Minimum: 0.00%
+  Maximum: 96.47%
+  5th percentile: 2.15%
+  25th percentile: 10.21%
+  75th percentile: 36.39%
+  95th percentile: 62.92%
+  Foreground Bins:
+    < 1%: 34
+    1-5%: 73
+    5-10%: 136
+    10-25%: 322
+    25-50%: 325
+    50-75%: 86
+    > 75%: 24
+
+Group: Combined Non-Leaf
+  Number of images: 2000
+  Mean foreground %: 25.98%
+  Median foreground %: 21.27%
+  Standard deviation: 20.44%
+  Minimum: 0.00%
+  Maximum: 96.47%
+  5th percentile: 1.68%
+  25th percentile: 9.56%
+  75th percentile: 37.74%
+  95th percentile: 66.65%
+  Foreground Bins:
+    < 1%: 71
+    1-5%: 189
+    5-10%: 262
+    10-25%: 606
+    25-50%: 599
+    50-75%: 218
+    > 75%: 55
+
+Diagnostics:
+- Leaf images with almost-empty masks (<1%): 0.40%
+- Non-Leaf images with almost-empty masks (<1%): 3.55%
+- Non-Leaf images with substantial foreground (>25%): 43.60%
+
+Overlap Analysis:
+  There is significant overlap between Leaf and Non-Leaf foreground distributions.
+  The DSP stage is NOT simply turning all Non-Leaf images black. Many Non-Leaf images retain complex foreground structures.

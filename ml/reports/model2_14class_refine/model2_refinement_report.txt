@@ -1,0 +1,31 @@
+Model 2 Refinement Report
+=========================
+
+--- Baseline (Original Epoch 3) ---
+Val Accuracy : 86.74%
+Val Macro-F1 : 0.8223
+
+--- Best Refinement Result ---
+Best Refine Epoch : 5 / 5
+Val Accuracy      : 95.01%
+Val Macro-F1      : 0.9335
+
+--- Key Crop Metrics (Best Refinement) ---
+Potato    -> Prec: 0.9261 | Rec: 0.8507 | F1: 0.8868
+Tomato    -> Prec: 0.9770 | Rec: 0.9396 | F1: 0.9579
+Raspberry -> Prec: 0.6818 | Rec: 1.0000 | F1: 0.8108
+
+--- Comparison ---
+Is Refinement better? YES
+
+--- Top 10 Confusions ---
+True: tomato       | Pred: apple        | Count: 32
+True: potato       | Pred: tomato       | Count: 19
+True: tomato       | Pred: orange       | Count: 17
+True: tomato       | Pred: potato       | Count: 13
+True: peach        | Pred: apple        | Count: 12
+True: tomato       | Pred: cherry       | Count: 11
+True: strawberry   | Pred: grape        | Count: 9
+True: tomato       | Pred: pepper       | Count: 9
+True: tomato       | Pred: soybean      | Count: 8
+True: tomato       | Pred: peach        | Count: 7

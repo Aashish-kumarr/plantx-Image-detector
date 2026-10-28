@@ -1,0 +1,134 @@
+Model 1 DSP Preprocessing Validation Report
+===========================================
+DSP operations implemented: RGB->HSV, Gaussian filtering, Otsu thresholding, Morphology (Open/Close), Largest Blob Extraction
+HSV channel used for mask generation: S (Saturation) channel
+Gaussian filter settings: Kernel Size = (5, 5), Sigma = 0 (auto)
+Thresholding method: Otsu's binarization
+Morphology kernel settings: Ellipse, Size = (5, 5), Iterations = 2 (Open), 2 (Close)
+Number of images tested: 40
+Paths to saved DSP sample images: C:\Users\ak021\Desktop\workspace\plantDx\plant image detector\reports\model1_dsp_samples
+
+Image Test Results:
+
+File: d77c3775-6dbf-4ad7-a04d-9acc067a7914___YLCV_GCREC 2205.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 37.90%
+File: 0a14783a-838a-4d4f-a671-ff98011714c6___FREC_Scab 3288.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 38.05%
+File: d9983cb7-98ea-4dff-b283-faa1d93faa36___RS_HL 7749.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 19.59%
+File: cb647989-23e4-4d54-ba50-7685b19e780d___RS_GLSp 9280.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 47.99%
+File: fd192f6d-f764-43aa-8ab9-9c1578d55200___JR_Sept.L.S 8466.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 30.16%
+File: 51d08a3c-0a36-472d-9079-06e4746488b5___RS_L.Scorch 0052.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 50.98%
+File: 235b0b45-a56a-427c-9fef-b6ca4688598d___RS_L.Scorch 1205.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 53.70%
+File: 0c151672-cd2d-4d48-ae64-ea10bdd59717___UF.Citrus_HLB_Lab 1441.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 50.22%
+File: e67a8a4a-e383-4eee-95e8-22443071ed6d___JR_B.Spot 9057.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 46.50%
+File: 742bfd1c-4e5c-415b-9ab5-9a1844d74cb7___FAM_L.Blight 4774.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 64.69%
+File: 4960660d-51cc-4a8d-947a-1454a6e0a383___FAM_B.Msls 1171.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 31.06%
+File: e68c0e5a-9d55-4b19-956a-ca7de83b3135___Com.G_TgS_FL 7964.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 11.74%
+File: d9a51145-38e9-410a-bb78-5f57ab02a177___RS_HL 2474.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 17.44%
+File: 1071fb04-ba12-4c59-a6ef-b43cd16139e5___Crnl_L.Mold 7119.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 29.49%
+File: 5e61bba3-e84a-4fb7-8f10-8af169303610___RS_HL 3779.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 46.54%
+File: d529f5df-f802-4cfe-9a4c-4739ba5dfbdf___RS_HL 7875.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 24.17%
+File: 514925bd-7cb8-4344-9ccc-06566c583d9a___Rut._Bact.S 1002.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 23.76%
+File: 9a660e06-4794-447e-92bb-7e6b877161f9___CREC_HLB 5042.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 34.42%
+File: 28f23e77-e556-40c8-8bc2-835227732de2___JR_B.Spot 8848.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 46.74%
+File: ff6c34e2-b51f-451e-87ea-9ba2f91a63d4___UF.Citrus_HLB_Lab 1341.JPG
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 59.67%
+File: 254_0083.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 25.09%
+File: 079_0035.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 67.42%
+File: 157_0008.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 9.37%
+File: 120_0085.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 44.17%
+File: 165_0035.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 10.92%
+File: 173_0088.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 16.91%
+File: 190_0080.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 41.74%
+File: 055_0056.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 0.34%
+File: 201_0012.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 28.76%
+File: 044_0098.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 0.00%
+File: Places365_val_00032872.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 5.11%
+File: Places365_val_00008008.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 10.76%
+File: Places365_val_00013923.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 5.42%
+File: Places365_val_00024697.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 61.69%
+File: Places365_val_00021470.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 8.32%
+File: Places365_val_00003041.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 6.78%
+File: Places365_val_00011556.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 20.76%
+File: Places365_val_00034256.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 4.01%
+File: Places365_val_00012089.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 11.63%
+File: Places365_val_00008978.jpg
+  Shape/Validity Pass: True
+  Foreground-mask percentage: 35.66%
+
+Total failures: 0

@@ -70,25 +70,43 @@ export default function QualityPassedState({
 
           {/* 4 Verification Checks Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
-            {qualityData?.checks?.map((check) => (
+            {Array.isArray(qualityData?.checks) ? qualityData.checks.map((check) => (
               <div
-                key={check.id}
                 className="p-3 rounded-lg border border-surface-variant bg-surface-container-low flex flex-col gap-1"
               >
                 <div className="flex items-center justify-between">
                   <span className="text-xs sm:text-sm font-semibold text-on-surface">
-                    {check.label}
                   </span>
                   <span className="inline-flex items-center gap-1 font-mono text-[10px] sm:text-[11px] text-surface-tint font-semibold">
                     <Icon name="check_circle" className="w-3.5 h-3.5" />
-                    {check.statusText}
                   </span>
                 </div>
                 <p className="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">
-                  {check.description}
                 </p>
               </div>
-            ))}
+            )) : qualityData?.checks ? Object.entries(qualityData.checks).map(([key, value]) => (
+              <div
+                key={key}
+                className="p-3 rounded-lg border border-surface-variant bg-surface-container-low flex flex-col gap-1"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-xs sm:text-sm font-semibold text-on-surface capitalize">
+                    {key}
+                  </span>
+                  <span className="inline-flex items-center gap-1 font-mono text-[10px] sm:text-[11px] text-surface-tint font-semibold">
+                    <Icon name="check_circle" className="w-3.5 h-3.5" />
+                    {value.status.toUpperCase()}
+                  </span>
+                </div>
+                <p className="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">
+                  {key === 'resolution' && 'Image dimensions meet minimum requirements.'}
+                  {key === 'sharpness' && 'Image is in focus and textures are clear.'}
+                  {key === 'lighting' && 'Illumination is balanced without harsh glare.'}
+                  {key === 'contrast' && 'Colors and features are distinctly separated.'}
+                </p>
+              </div>
+            )) : null}
+
           </div>
 
           {/* Leaf Visibility Notice */}

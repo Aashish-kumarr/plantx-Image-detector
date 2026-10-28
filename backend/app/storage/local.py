@@ -1,4 +1,4 @@
-"""Local filesystem storage adapter implementing StorageInterface.
+﻿"""Local filesystem storage adapter implementing StorageInterface.
 
 Stores uploaded images under the configured LOCAL_STORAGE_ROOT directory.
 Storage keys are UUID-based; original filenames are never used as paths.
@@ -74,7 +74,7 @@ class LocalStorage(StorageInterface):
         try:
             with open(dest, "wb") as fh:
                 fh.write(file_bytes)
-            logger.debug("Saved %d bytes → %s", len(file_bytes), key)
+            logger.debug("Saved %d bytes -> %s", len(file_bytes), key)
             return key
         except OSError as exc:
             logger.error("Failed to write file %s: %s", key, exc)

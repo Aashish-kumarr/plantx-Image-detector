@@ -13,6 +13,11 @@ dependencies = [
     "uvicorn[standard]>=0.30.0",
     "pydantic>=2.8.0",
     "pydantic-settings>=2.4.0",
+    "torch",
+    "torchvision",
+    "opencv-python",
+    "Pillow",
+    "numpy"
 ]
 
 [project.optional-dependencies]

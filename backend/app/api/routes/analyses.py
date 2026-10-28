@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, Query
+﻿from fastapi import APIRouter, Depends, Query
 
 from app.core.auth import AuthUser, get_current_user
 from app.core.logging import get_logger

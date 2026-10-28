@@ -1,4 +1,4 @@
-"""Firebase Admin Authentication module for PlantDx FastAPI backend."""
+﻿"""Firebase Admin Authentication module for PlantDx FastAPI backend."""
 
 import os
 from dataclasses import dataclass

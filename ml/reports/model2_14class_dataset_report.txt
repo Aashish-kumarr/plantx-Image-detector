@@ -1,0 +1,139 @@
+Model 2 (14-class) Dataset Report
+=================================
+
+Overall Verification:
+  Total images: 54305
+  Train: 43444
+  Val: 5430
+  Test: 5431
+  Unique Crops: 14
+
+Class Distribution:
+
+[ 0] Apple:
+      Total: 3171
+      Train: 2574 (5.92% of training set)
+      Val:   317
+      Test:  280
+
+[ 1] Blueberry:
+      Total: 1502
+      Train: 1215 (2.80% of training set)
+      Val:   133
+      Test:  154
+
+[ 2] Cherry:
+      Total: 1906
+      Train: 1506 (3.47% of training set)
+      Val:   192
+      Test:  208
+
+[ 3] Corn:
+      Total: 3852
+      Train: 3060 (7.04% of training set)
+      Val:   393
+      Test:  399
+
+[ 4] Grape:
+      Total: 4062
+      Train: 3297 (7.59% of training set)
+      Val:   407
+      Test:  358
+
+[ 5] Orange:
+      Total: 5507
+      Train: 4405 (10.14% of training set)
+      Val:   527
+      Test:  575
+
+[ 6] Peach:
+      Total: 2657
+      Train: 2134 (4.91% of training set)
+      Val:   253
+      Test:  270
+
+[ 7] Pepper:
+      Total: 2475
+      Train: 1995 (4.59% of training set)
+      Val:   230
+      Test:  250
+
+[ 8] Potato:
+      Total: 2152
+      Train: 1721 (3.96% of training set)
+      Val:   221
+      Test:  210
+
+[ 9] Raspberry:
+      Total: 371
+      Train: 303 (0.70% of training set)
+      Val:   30
+      Test:  38
+
+[10] Soybean:
+      Total: 5090
+      Train: 4055 (9.33% of training set)
+      Val:   533
+      Test:  502
+
+[11] Squash:
+      Total: 1835
+      Train: 1486 (3.42% of training set)
+      Val:   186
+      Test:  163
+
+[12] Strawberry:
+      Total: 1565
+      Train: 1251 (2.88% of training set)
+      Val:   155
+      Test:  159
+
+[13] Tomato:
+      Total: 18160
+      Train: 14442 (33.24% of training set)
+      Val:   1853
+      Test:  1865
+
+Imbalance Analysis:
+  Largest crop class: Tomato (14442 train images)
+  Smallest crop class: Raspberry (303 train images)
+  Max/Min imbalance ratio: 47.7x
+
+Class Weights Analysis:
+  (1) Standard Inverse-Frequency Balanced Weights:
+      apple: 1.2056
+      blueberry: 2.5540
+      cherry: 2.0605
+      corn: 1.0141
+      grape: 0.9412
+      orange: 0.7045
+      peach: 1.4541
+      pepper: 1.5555
+      potato: 1.8031
+      raspberry: 10.2414
+      soybean: 0.7653
+      squash: 2.0883
+      strawberry: 2.4805
+      tomato: 0.2149
+
+  (2) Square-Root Inverse-Frequency Weights:
+      apple: 0.8399
+      blueberry: 1.2224
+      cherry: 1.0980
+      corn: 0.7703
+      grape: 0.7421
+      orange: 0.6420
+      peach: 0.9224
+      pepper: 0.9540
+      potato: 1.0271
+      raspberry: 2.4479
+      soybean: 0.6691
+      squash: 1.1054
+      strawberry: 1.2047
+      tomato: 0.3546
+
+  (3) Recommended Mild/Capped Weighting Strategy:
+      Since aggressive inverse-frequency caused overprediction of minority classes like Potato,
+      we recommend using the Square-Root Inverse-Frequency weights, or standard balanced weights
+      capped at a maximum value (e.g., max_weight = 3.0) to prevent the loss from being dominated
+      by extreme outliers like Soybean/Raspberry.

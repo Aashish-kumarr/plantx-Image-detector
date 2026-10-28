@@ -1,0 +1,19 @@
+Model 1 DataLoader Post-CUDA Upgrade Benchmark
+==============================================
+Batch Size: 64
+Batches measured per config: 30
+Warmup batches: 2
+
+Workers  | Prefetch | Persist  | imgs/sec | Stable
+--------------------------------------------------
+0        | None     | False    | 38.5     | Yes
+2        | 2        | True     | 76.7     | Yes
+2        | 4        | True     | 73.9     | Yes
+4        | 2        | True     | 160.2    | Yes
+4        | 4        | True     | 157.3    | Yes
+6        | 2        | True     | 192.5    | Yes
+6        | 4        | True     | 211.6    | Yes
+
+Conclusion:
+Fastest stable configuration achieved 211.6 imgs/sec.
+Recommended Settings: num_workers=6, prefetch_factor=4, persistent_workers=True

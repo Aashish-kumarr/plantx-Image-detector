@@ -1,4 +1,4 @@
-"""Centralized API v1 router definition."""
+﻿"""Centralized API v1 router definition."""
 
 from fastapi import APIRouter
 from app.api.routes import health

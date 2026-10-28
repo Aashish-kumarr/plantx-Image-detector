@@ -1,4 +1,4 @@
-"""Storage interface abstractions for binary image assets."""
+﻿"""Storage interface abstractions for binary image assets."""
 
 from abc import ABC, abstractmethod
 from typing import BinaryIO, Optional

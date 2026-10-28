@@ -34,16 +34,16 @@ export default function UnsupportedCropResult({ result, renderImage, renderActio
               {result?.title || 'Plant leaf detected'}
             </h2>
             <p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-              {result?.subheading || 'PlantDx identified the image as a plant leaf, but it could not confidently match it to Tomato or Potato. Disease analysis was not run.'}
+              {result?.subheading || 'Crop detected successfully. Disease classification is not currently supported for this crop.'}
             </p>
           </div>
 
           <div className="p-3.5 rounded-lg bg-surface-container-low border border-surface-variant flex flex-col gap-1.5">
             <span className="text-xs font-semibold text-on-surface">
-              Why didn&apos;t analysis continue?
+              Why didn&apos;t disease analysis run?
             </span>
             <p className="text-xs text-on-surface-variant leading-relaxed">
-              {result?.reasonText || 'PlantDx first checks whether an image contains a leaf, then determines whether it can route that leaf to one of its supported crop models. This leaf could not be reliably routed to the Tomato or Potato analysis pipeline.'}
+              {result?.reasonText || 'PlantDx detected your leaf and identified the crop, but disease analysis models are only available for specific crops. Disease classification for this crop is not yet included in the current model set.'}
             </p>
           </div>
 
@@ -52,37 +52,24 @@ export default function UnsupportedCropResult({ result, renderImage, renderActio
             <div className="flex items-center justify-between flex-wrap gap-2">
               <div className="flex items-center gap-1.5 text-on-surface text-xs font-semibold">
                 <Icon name="verified" className="w-4 h-4 text-primary" />
-                <span>Currently supported crops</span>
+                <span>Crops with disease analysis</span>
               </div>
               <span className="font-mono text-[10px] uppercase text-outline">
-                Solanaceae models
+                9 crop models
               </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-              <div className="p-2.5 rounded bg-surface-container-low border border-surface-variant flex items-center justify-between">
-                <div className="flex items-center gap-2 text-xs font-medium text-on-surface">
-                  <Icon name="eco" className="w-4 h-4 text-surface-tint" />
-                  <span>Tomato</span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {['Apple', 'Cherry', 'Corn', 'Grape', 'Peach', 'Pepper', 'Potato', 'Strawberry', 'Tomato'].map((crop) => (
+                <div key={crop} className="p-2 rounded bg-surface-container-low border border-surface-variant flex items-center gap-2">
+                  <Icon name="eco" className="w-3.5 h-3.5 text-surface-tint shrink-0" />
+                  <span className="text-xs font-medium text-on-surface">{crop}</span>
                 </div>
-                <span className="font-mono text-[10px] text-surface-tint font-semibold uppercase">
-                  Supported
-                </span>
-              </div>
-
-              <div className="p-2.5 rounded bg-surface-container-low border border-surface-variant flex items-center justify-between">
-                <div className="flex items-center gap-2 text-xs font-medium text-on-surface">
-                  <Icon name="eco" className="w-4 h-4 text-surface-tint" />
-                  <span>Potato</span>
-                </div>
-                <span className="font-mono text-[10px] text-surface-tint font-semibold uppercase">
-                  Supported
-                </span>
-              </div>
+              ))}
             </div>
 
             <p className="text-[11px] sm:text-xs text-outline">
-              PlantDx currently provides disease analysis for Tomato and Potato leaves.
+              PlantDx currently provides disease analysis for the 9 crops listed above.
             </p>
           </div>
         </div>
@@ -90,11 +77,11 @@ export default function UnsupportedCropResult({ result, renderImage, renderActio
         {/* Uploaded Leaf Image Card */}
         {renderImage}
 
-        {/* Photography Guidance If This Is Actually Tomato / Potato */}
+        {/* Guidance section for real-image submissions */}
         <div className="bg-surface border border-surface-variant rounded-xl p-5 sm:p-6 flex flex-col gap-4 shadow-sm">
           <div className="flex items-center justify-between border-b border-surface-variant pb-3">
             <h3 className="text-sm sm:text-base font-semibold text-primary font-display">
-              If this is a Tomato or Potato leaf
+              Getting better results
             </h3>
             <span className="font-mono text-[10px] sm:text-[11px] uppercase text-outline">
               Guidance

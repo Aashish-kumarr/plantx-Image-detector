@@ -1,4 +1,4 @@
-"""Image upload route — POST /api/v1/images.
+﻿"""Image upload route — POST /api/v1/images.
 
 Performs authoritative image validation using Pillow, normalizes EXIF
 orientation, and stores the file via LocalStorage.

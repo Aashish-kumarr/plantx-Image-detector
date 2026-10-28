@@ -1,4 +1,4 @@
-"""Health check endpoint route definition."""
+﻿"""Health check endpoint route definition."""
 
 from fastapi import APIRouter
 from pydantic import BaseModel

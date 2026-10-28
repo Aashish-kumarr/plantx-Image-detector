@@ -58,10 +58,10 @@ export default function ResultPageClient({ id, initialDemoState }) {
               ? "Crop not supported"
               : "Analysis failed",
           title:
-            data.prediction?.display_name ||
-            (data.status === "healthy"
-              ? "Healthy result"
-              : data.status === "not_leaf"
+            data.status === "healthy"
+              ? (data.prediction?.crop ? (data.prediction.crop.charAt(0).toUpperCase() + data.prediction.crop.slice(1) + " Healthy") : "Healthy result")
+              : data.prediction?.display_name ||
+              (data.status === "not_leaf"
               ? "No leaf pattern detected"
               : data.status === "unsupported_crop"
               ? "Plant leaf detected"
@@ -72,13 +72,13 @@ export default function ResultPageClient({ id, initialDemoState }) {
               : data.status === "disease_detected"
               ? `Observed visual patterns in leaf specimen closely align with symptomatic features of ${data.prediction?.display_name || "disease"}.`
               : data.status === "not_leaf"
-              ? "PlantDx could not identify a plant leaf in this image. Further classification was halted to avoid false diagnostic readings."
+              ? "No plant leaf was detected in this image. Further classification was halted to avoid false diagnostic readings."
               : data.status === "unsupported_crop"
-              ? "PlantDx identified the image as a plant leaf, but it could not confidently match it to Tomato or Potato. Disease analysis was not run."
+              ? "Crop detected successfully. Disease classification is not currently supported for this crop."
               : "PlantDx encountered an unexpected problem while processing the analysis.",
-          leafCheck: data.leaf_check,
-          cropCheck: data.crop_check,
-          prediction: data.prediction,
+          leafCheck: data.leaf_check ? { ...data.leaf_check, score: data.leaf_check.score != null ? data.leaf_check.score * 100 : null } : null,
+          cropCheck: data.crop_check ? { ...data.crop_check, score: data.crop_check.score != null ? data.crop_check.score * 100 : null } : null,
+          prediction: data.prediction ? { ...data.prediction, score: data.prediction.score != null ? data.prediction.score * 100 : null } : null,
           confidenceNote:
             "Model confidence reflects activation scores among supported classes, not Bayesean probabilities or laboratory certainty.",
           image: {

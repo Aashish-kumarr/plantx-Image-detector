@@ -1,0 +1,38 @@
+Model 1 Epoch 1 Benchmark Report
+================================
+
+Configuration Details:
+  Model: ResNet-9 from scratch
+  Loss: CrossEntropyLoss
+  Optimizer: AdamW (lr=1e-3, weight_decay=1e-4)
+  AMP: Enabled (autocast + GradScaler)
+  Batch size: 64
+  DataLoader: num_workers=0, pin_memory=False
+
+Performance Metrics:
+  Train Loss: 0.1336
+  Train Accuracy: 95.33%
+  Validation Loss: 0.0866
+  Validation Accuracy: 96.68%
+  Validation Precision: 0.9689
+  Validation Recall: 0.9661
+  Validation Macro-F1: 0.9667
+
+Timings:
+  Train phase duration: 4584.9s
+  Validation phase duration: 95.9s
+  Complete epoch duration: 4680.9s
+  Training throughput: 19.4 images/sec
+
+Hardware & Memory:
+  GPU Name: NVIDIA GeForce RTX 5060 Laptop GPU
+  Current Allocated VRAM: 118.89 MB
+  Current Reserved VRAM: 9940.00 MB
+  Peak Allocated VRAM: 6549.50 MB
+  Peak Reserved VRAM: 9940.00 MB
+
+Checkpoint Status:
+  checkpoints/model1/last_model1.pth: Saved
+  checkpoints/model1/best_model1.pth: Saved
+
+STEP 17 ONE-EPOCH BENCHMARK COMPLETE

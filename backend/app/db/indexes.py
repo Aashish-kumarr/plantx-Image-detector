@@ -1,4 +1,4 @@
-"""MongoDB index initialization for PlantDx collections."""
+﻿"""MongoDB index initialization for PlantDx collections."""
 
 from pymongo import ASCENDING, DESCENDING
 from pymongo.database import Database

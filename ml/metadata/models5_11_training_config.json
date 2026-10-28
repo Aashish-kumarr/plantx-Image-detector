@@ -1,0 +1,286 @@
+[
+    {
+        "model_name": "model5_apple",
+        "model_number": 5,
+        "crop": "apple",
+        "num_classes": 4,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "apple_scab",
+            "2": "black_rot",
+            "3": "cedar_apple_rust"
+        },
+        "label_to_index": {
+            "healthy": 0,
+            "apple_scab": 1,
+            "black_rot": 2,
+            "cedar_apple_rust": 3
+        },
+        "train_csv": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\metadata\\model5_apple_master.csv",
+        "dataset_root": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\dataset\\plantvillage dataset\\color",
+        "train_count": 2536,
+        "validation_count": 316,
+        "test_count": 319,
+        "normalization_mean": [
+            0.07347409,
+            0.10038915,
+            0.0658901
+        ],
+        "normalization_std": [
+            0.1349588,
+            0.17648672,
+            0.12671633
+        ],
+        "class_weights": [
+            0.59785894,
+            0.96607625,
+            0.97383602,
+            1.46222879
+        ],
+        "image_size": 224,
+        "architecture": "resnet9",
+        "trained_from_scratch": true,
+        "pretrained": false,
+        "test_locked": true
+    },
+    {
+        "model_name": "model6_cherry",
+        "model_number": 6,
+        "crop": "cherry",
+        "num_classes": 2,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "powdery_mildew"
+        },
+        "label_to_index": {
+            "healthy": 0,
+            "powdery_mildew": 1
+        },
+        "train_csv": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\metadata\\model6_cherry_master.csv",
+        "dataset_root": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\dataset\\plantvillage dataset\\color",
+        "train_count": 1524,
+        "validation_count": 190,
+        "test_count": 192,
+        "normalization_mean": [
+            0.14351691,
+            0.18846236,
+            0.11188254
+        ],
+        "normalization_std": [
+            0.18727443,
+            0.24050464,
+            0.15725942
+        ],
+        "class_weights": [
+            1.05197732,
+            0.94802268
+        ],
+        "image_size": 224,
+        "architecture": "resnet9",
+        "trained_from_scratch": true,
+        "pretrained": false,
+        "test_locked": true
+    },
+    {
+        "model_name": "model7_corn",
+        "model_number": 7,
+        "crop": "corn",
+        "num_classes": 4,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "cercospora_leaf_spot_gray_leaf_spot",
+            "2": "common_rust",
+            "3": "northern_leaf_blight"
+        },
+        "label_to_index": {
+            "healthy": 0,
+            "cercospora_leaf_spot_gray_leaf_spot": 1,
+            "common_rust": 2,
+            "northern_leaf_blight": 3
+        },
+        "train_csv": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\metadata\\model7_corn_master.csv",
+        "dataset_root": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\dataset\\plantvillage dataset\\color",
+        "train_count": 3080,
+        "validation_count": 384,
+        "test_count": 388,
+        "normalization_mean": [
+            0.13903937,
+            0.16719028,
+            0.10428933
+        ],
+        "normalization_std": [
+            0.20518272,
+            0.23928076,
+            0.16130961
+        ],
+        "class_weights": [
+            0.87366948,
+            1.31511307,
+            0.86259825,
+            0.94861921
+        ],
+        "image_size": 224,
+        "architecture": "resnet9",
+        "trained_from_scratch": true,
+        "pretrained": false,
+        "test_locked": true
+    },
+    {
+        "model_name": "model8_grape",
+        "model_number": 8,
+        "crop": "grape",
+        "num_classes": 4,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "black_rot",
+            "2": "esca_black_measles",
+            "3": "leaf_blight_isariopsis_leaf_spot"
+        },
+        "label_to_index": {
+            "healthy": 0,
+            "black_rot": 1,
+            "esca_black_measles": 2,
+            "leaf_blight_isariopsis_leaf_spot": 3
+        },
+        "train_csv": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\metadata\\model8_grape_master.csv",
+        "dataset_root": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\dataset\\plantvillage dataset\\color",
+        "train_count": 3248,
+        "validation_count": 405,
+        "test_count": 409,
+        "normalization_mean": [
+            0.13681938,
+            0.17084016,
+            0.08285125
+        ],
+        "normalization_std": [
+            0.1825235,
+            0.21670182,
+            0.11859776
+        ],
+        "class_weights": [
+            1.43983018,
+            0.86155623,
+            0.79596149,
+            0.9026521
+        ],
+        "image_size": 224,
+        "architecture": "resnet9",
+        "trained_from_scratch": true,
+        "pretrained": false,
+        "test_locked": true
+    },
+    {
+        "model_name": "model9_peach",
+        "model_number": 9,
+        "crop": "peach",
+        "num_classes": 2,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "bacterial_spot"
+        },
+        "label_to_index": {
+            "healthy": 0,
+            "bacterial_spot": 1
+        },
+        "train_csv": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\metadata\\model9_peach_master.csv",
+        "dataset_root": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\dataset\\plantvillage dataset\\color",
+        "train_count": 2125,
+        "validation_count": 265,
+        "test_count": 267,
+        "normalization_mean": [
+            0.10522229,
+            0.10649589,
+            0.04322645
+        ],
+        "normalization_std": [
+            0.20703991,
+            0.19445668,
+            0.08863733
+        ],
+        "class_weights": [
+            1.43271484,
+            0.56728516
+        ],
+        "image_size": 224,
+        "architecture": "resnet9",
+        "trained_from_scratch": true,
+        "pretrained": false,
+        "test_locked": true
+    },
+    {
+        "model_name": "model10_pepper",
+        "model_number": 10,
+        "crop": "pepper",
+        "num_classes": 2,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "bacterial_spot"
+        },
+        "label_to_index": {
+            "healthy": 0,
+            "bacterial_spot": 1
+        },
+        "train_csv": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\metadata\\model10_pepper_master.csv",
+        "dataset_root": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\dataset\\plantvillage dataset\\color",
+        "train_count": 1979,
+        "validation_count": 246,
+        "test_count": 250,
+        "normalization_mean": [
+            0.1214166,
+            0.16457595,
+            0.0872918
+        ],
+        "normalization_std": [
+            0.17571826,
+            0.22456476,
+            0.13301843
+        ],
+        "class_weights": [
+            0.90179046,
+            1.09820954
+        ],
+        "image_size": 224,
+        "architecture": "resnet9",
+        "trained_from_scratch": true,
+        "pretrained": false,
+        "test_locked": true
+    },
+    {
+        "model_name": "model11_strawberry",
+        "model_number": 11,
+        "crop": "strawberry",
+        "num_classes": 2,
+        "class_mapping": {
+            "0": "healthy",
+            "1": "leaf_scorch"
+        },
+        "label_to_index": {
+            "healthy": 0,
+            "leaf_scorch": 1
+        },
+        "train_csv": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\metadata\\model11_strawberry_master.csv",
+        "dataset_root": "C:\\Users\\ak021\\Desktop\\workspace\\plantDx\\plant image detector\\dataset\\plantvillage dataset\\color",
+        "train_count": 1251,
+        "validation_count": 155,
+        "test_count": 159,
+        "normalization_mean": [
+            0.19913457,
+            0.21676643,
+            0.1166481
+        ],
+        "normalization_std": [
+            0.23870961,
+            0.25625631,
+            0.15102065
+        ],
+        "class_weights": [
+            1.21906406,
+            0.78093594
+        ],
+        "image_size": 224,
+        "architecture": "resnet9",
+        "trained_from_scratch": true,
+        "pretrained": false,
+        "test_locked": true
+    }
+]

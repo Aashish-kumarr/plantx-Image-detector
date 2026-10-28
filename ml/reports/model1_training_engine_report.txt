@@ -1,0 +1,30 @@
+Model 1 Training Engine Report
+==============================
+
+Configuration Details:
+  Loss function: CrossEntropyLoss (unweighted)
+  Optimizer: AdamW (lr=1e-3, weight_decay=1e-4)
+  Scheduler: ReduceLROnPlateau (mode='min', factor=0.5, patience=2)
+  AMP: CUDA autocast + GradScaler enabled
+  Early stopping: Patience=5 (monitoring macro-F1)
+  Checkpoint format: Epoch, model/optim/sched/scaler states, best F1, label mapping
+  Resume support: Implemented via load_checkpoint()
+  Progress bar: tqdm used for batch-level progress and ETA
+  History CSV: epoch, train/val loss, train/val acc, val prec/rec/f1, lr, times
+
+Dry-Run Results:
+  Train loss (5 batches): 0.4552
+  Validation macro-F1 (5 batches): 0.4107
+
+Weight Update Check:
+  Pre-train parameter checksum: 119560.9824
+  Post-train parameter checksum: 120450.2571
+  Optimizer weight update: PASSED
+
+GPU Memory Usage:
+  Allocated VRAM: 117.64 MB
+  Reserved VRAM: 9940.00 MB
+  Peak Allocated VRAM: 6549.50 MB
+  Peak Reserved VRAM: 9940.00 MB
+
+STEP 16 PASSED
